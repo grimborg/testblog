@@ -1,0 +1,23 @@
+<div class='blurImg'>
+  <div class="a" style="background-image: url('https://d262ilb51hltx0.cloudfront.net/fit/c/1600/1280/gradv/29/81/60/darken/25/1*4ncz3hLxmL8E_bUh-0z62w.jpeg')"></div>
+  <div class="thebackground" style="background-image: url('https://d262ilb51hltx0.cloudfront.net/fit/c/1600/1280/gradv/29/81/60/darken/25/1*4ncz3hLxmL8E_bUh-0z62w.jpeg')"></div>
+  </div>
+  <header>
+    <div>
+      <h1>
+        {{ site.title }}
+      </h1>
+      <p>
+        {{ site.tagline }}
+      </p>
+    </div>
+    <nav role='navigation'>
+      <ul>
+      {% for page in site.pages_list %}
+        <li>
+          <a href="{{ page[1] }}">{{ page[0] }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    </nav>
+  </header>
